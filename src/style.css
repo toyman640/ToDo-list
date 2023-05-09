@@ -1,0 +1,54 @@
+.container {
+  width: 80%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  margin-left: 10%;
+  margin-top: 200px;
+}
+
+.header {
+  height: 30px;
+  line-height: 50px;
+  margin-left: 1%;
+}
+
+input {
+  border: none;
+  outline: none;
+  width: 90%;
+}
+
+.add-button {
+  border: 0;
+  background: #fff;
+  cursor: pointer;
+}
+
+form {
+  height: 20px;
+  margin-top: 20px;
+  padding-left: 1%;
+}
+
+.list-item {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+}
+
+.check {
+  width: 4%;
+  height: 2%;
+  margin-top: 20px;
+}
+
+.reset {
+  width: 100%;
+  border: 0;
+  height: 50px;
+  cursor: pointer;
+}
+
+.lists {
+  display: flex;
+}

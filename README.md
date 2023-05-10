@@ -160,6 +160,10 @@ Feel free to check the [issues page](../../issues/).
 
 Give a :star:️ if you like this project and how I managed to build it!
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## :pray: Acknowledgments <a name="acknowledgements"></a>
+
 - The original design ideal from Microverse:two_hearts:.
 - Project from [Microverse](https://bit.ly/MicroverseTN) HTML/CSS module.
 - Thanks to the Microverse team for the great curriculum.

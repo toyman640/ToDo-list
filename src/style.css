@@ -52,3 +52,10 @@ form {
 .lists {
   display: flex;
 }
+
+.delete-handle {
+  border: 0;
+  background: 0;
+  margin-left: 80%;
+  cursor: pointer;
+}

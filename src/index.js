@@ -1,5 +1,5 @@
 import './style.css';
-import { addtask } from './add-task.js';
+import { addtask } from './manage.js';
 
 const form = document.querySelector('form');
 
@@ -10,5 +10,3 @@ form.addEventListener('submit', (event) => {
   addtask(description);
   newTask.value = '';
 });
-
-// console.log(todos)

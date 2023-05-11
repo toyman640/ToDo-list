@@ -32,7 +32,6 @@ export default function component() {
     supertop.appendChild(line);
     task.insertBefore(supertop, task.querySelector('.reset'));
     status.addEventListener('change', () => {
-      todo.completed = status.checked;
       todo.status = status.checked;
       localStorage.setItem('todos', JSON.stringify(todos));
     });

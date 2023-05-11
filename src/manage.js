@@ -4,8 +4,9 @@ let todos = JSON.parse(localStorage.getItem('todos')) || [];
 let currentIndex = todos.length + 1;
 
 const task = document.querySelector('.tasks');
+const clearButton = document.querySelector('#clear-checked');
 
-function component() {
+export default function component() {
   task.innerHTML = '';
   todos.forEach((todo) => {
     const supertop = document.createElement('div');
@@ -33,6 +34,15 @@ function component() {
     status.addEventListener('change', () => {
       todo.status = status.checked;
       localStorage.setItem('todos', JSON.stringify(todos));
+    });
+    clearButton.addEventListener('click', () => {
+      const taskLeft = todos.filter((todo) => !todo.status);
+      todos = taskLeft;
+      todos.forEach((todo, index) => {
+        todo.index = index + 1;
+      });
+      localStorage.setItem('todos', JSON.stringify(todos));
+      component();
     });
     deleteButton.addEventListener('click', () => {
       const index = todos.findIndex((item) => item.index === todo.index);

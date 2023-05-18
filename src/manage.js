@@ -99,5 +99,4 @@ window.addEventListener('load', () => {
   component();
 });
 
-// export { addtask, component };
-module.exports = todos, addtask
+export { addtask, component };

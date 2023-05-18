@@ -1,25 +1,34 @@
-const addtask = require('./additem')
-// const localStorage = require('./additem')
+const handleEditClick = require('./editItem.js');
+const clearCompleted = require('./clearTask.js');
 
-// localStorage.setItem = jest.fn();
-// jest.mock('./additem', () => {
-//     const originalLocalStorageMock = jest.requireActual('./additem');
-//     const mockSetItem = jest.fn();
-//     return {
-//       ...originalLocalStorageMock,
-//       setItem: mockSetItem,
-//     };
-// });
-  
+describe('edit item', () => {
+  test('edit task', () => {
+    const container = document.createElement('div');
+    container.classList.add('container');
+    const describe = document.createElement('p');
+    describe.classList.add('describe');
+    describe.textContent = 'book';
+    container.appendChild(describe);
+    document.body.appendChild(container);
+    const description = 'boy';
+    handleEditClick(container, describe, description);
+    const editInput = container.querySelector('.edit-input');
+    editInput.value = 'girl';
+    editInput.dispatchEvent(new Event('blur'));
+    expect(describe.textContent).toEqual('girl');
+  });
+});
 
-// test('should and description, status with boolean value and index with string value', () => {
-//     expect(addtask()).toStrictEqual({description : 'hello', index : 1, status : false});
-//     expect(localStorage.setItem).toHaveBeenCalledTimes(1);
-// })
-describe('add item',()=>{
-    test('add an item',()=>{
-        expect(addtask('title')).toEqual([{description:'title',
-        status:false,index:1}])
-    })
-    
-})
+describe('clearCompleted', () => {
+  test('removes all status true items from todos array', () => {
+    let todos = [
+      { description: 'Task 1', status: false },
+      { description: 'Task 2', status: true },
+      { description: 'Task 3', status: false },
+      { description: 'Task 4', status: true },
+    ];
+    todos = clearCompleted(todos);
+    const completedTasks = todos.filter((todo) => todo.status);
+    expect(completedTasks.length).toEqual(0);
+  });
+});

@@ -27,14 +27,17 @@
 //     };
 // })();
 
-const addtask = (description = 'hello', status = false) => {
+const addtask = (description, status=false,index =1) => {
     const todos = [];
-    const todo = { description, index, status };
+    const todo = { description,status,index };
     todos.push(todo);
+    todos.forEach((todo,indexs)=>{
+        todo.index =  indexs+index
+    })
     // currentIndex += 1;
-    localStorage.setItem('todos', JSON.stringify(todos));
+    // localStorage.setItem('todos', JSON.stringify(todos));
     // component();
-    return todo;
+    return todos;
 };
 
-module.exports = addtask, localStorage
+module.exports = addtask

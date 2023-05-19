@@ -2,29 +2,29 @@
 
 # :green_book: Table of Contents
 
-- [:book: About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [:rocket: Live Demo](#live-demo)
-- [:computer: Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Setup](#setup)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#deployment)
-- [:bust_in_silhouette: Author](#author)
-- [:telescope: Future Features](#future-features)
-- [:handshake: Contributing](#contributing)
-- [:star:️ Show your support](#support)
-- [:pray: Acknowledgements](#acknowledgements)
-- [:question: FAQ](#faq)
-- [:memo: License](#license)
+- [:green\_book: Table of Contents](#green_book-table-of-contents)
+- [:book: TOdo list project ](#book-todo-list-project-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [:computer: Getting Started ](#computer-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Run tests](#run-tests)
+    - [Deployment ](#deployment-)
+  - [:bust\_in\_silhouette: Author ](#bust_in_silhouette-author-)
+  - [:telescope: Future Features ](#telescope-future-features-)
+  - [:handshake: Contributing ](#handshake-contributing-)
+  - [:star:️ Show your support ](#star️-show-your-support-)
+  - [:pray: Acknowledgments ](#pray-acknowledgments-)
+  - [:question: FAQ ](#question-faq-)
+  - [:memo: License ](#memo-license-)
 
 # :book: TOdo list project <a name="about-project"></a>
 
-**TOdo list project** is a  project built with HTML, CSS AND JAVASCRIPT.
+**TOdo list project** is a  project built with HTML, CSS ,JAVASCRIPT and jest for making tests on the edit and delete all button function
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -47,13 +47,6 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-
-- [Live Demo Link]**coming soon**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -135,7 +128,11 @@ You can deploy this project using: GitHub Pages,
 
 - GitHub: [@toyman640](https://github.com/toyman640)
 - Twitter: [@_toyman](https://twitter.com/_toyman)
+  
+: **Okongo Derrick**
 
+- GitHub: [Derrick1451](https://github.com/derrick1451)
+- Twitter: [@Derrick1451](https://twitter.com/_derrick1451)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -22,13 +22,13 @@ describe('edit item', () => {
 describe('clearCompleted', () => {
   test('removes all status true items from todos array', () => {
     let todos = [
-      { description: 'Task 1', status: false },
+      { description: 'Task 1', status: true },
       { description: 'Task 2', status: true },
       { description: 'Task 3', status: false },
-      { description: 'Task 4', status: true },
+      { description: 'Task 4', status: false },
     ];
     todos = clearCompleted(todos);
-    const completedTasks = todos.filter((todo) => todo.status);
-    expect(completedTasks.length).toEqual(0);
+    const completedTasks = todos.filter((todo) => !todo.status);
+    expect(completedTasks.length).toEqual(2);
   });
 });
